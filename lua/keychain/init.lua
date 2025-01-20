@@ -56,11 +56,11 @@ end
 
 -- Plugin setup
 function M.setup()
-	vim.notify("Starting keychain")
+	--vim.notify("Starting keychain", vim.log.levels.INFO)
 	load_counts()
-	vim.notify("setting up keychain")
+	--vim.notify("setting up keychain", vim.log.levels.INFO)
 	setup_autocmds()
-		vim.notify("Creating commands")
+		--vim.notify("Creating commands", vim.log.levels.INFO)
 	vim.api.nvim_create_user_command("ShowKeyCounts", M.show_counts, {})
 	vim.keymap.set("n", "<Leader>ks", "<cmd>ShowKeyCounts<cr>", { noremap = true, silent = true })
 end
