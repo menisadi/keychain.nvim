@@ -61,7 +61,7 @@ function M.setup()
 	vim.notify("setting up keychain")
 	setup_autocmds()
 		vim.notify("Creating commands")
-	vim.api.nvim_create_user_command("ShowKeyCounts", M.show_counts(), {})
+	vim.api.nvim_create_user_command("ShowKeyCounts", M.show_counts, {})
 	vim.keymap.set("n", "<Leader>ks", "<cmd>ShowKeyCounts<cr>", { noremap = true, silent = true })
 end
 
