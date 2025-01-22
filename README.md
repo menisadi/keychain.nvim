@@ -1,3 +1,7 @@
+**Archived - PROJECT**
+
+This project is no longer actively maintained or developed. It has been archived
+due to its complexity and lack of ongoing resources.
 
 # Keychain - a Keymap Tracker (WIP)
 
